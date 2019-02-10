@@ -1,0 +1,293 @@
+*{
+  box-sizing:border-box; 
+  margin:0; 
+  padding:0;  
+}
+
+body{
+ font-family: 'Righteous', cursive;;
+}
+
+a{
+  text-decoration:none; 
+}
+
+p{
+  margin: 0.75rem 0; 
+}
+
+/*utility classes*/
+.text-primary{
+  color: white; 
+}
+.text-green{
+  color: #9FC131; 
+}
+
+.l-heading{
+  font-size:3.5rem;
+  margin-bottom: 0.75rem; 
+  line-height: 1.1; 
+  font-family: 'Comfortaa', cursive; 
+}
+.m-heading{
+  font-size:2rem; 
+  margin-bottom: 0.75rem; 
+  line-height: 1.1; 
+  text-align: center; 
+}
+.lead{
+  font-size: 1.7rem; 
+  margin-bottom: 2rem; 
+  color:white; 
+  font-family: 'Comfortaa', cursive;
+}
+.py-1{padding:1.5rem 0;}
+.py-2{padding:2rem 0;}
+.py-3{padding:3rem 0;}
+
+.p-1{padding:1.5rem ;}
+.p-2{padding:2rem ;}
+.p-3{padding:3rem ;}
+
+.btn{
+  display:inline-block; 
+  color:white; 
+  background: #bdd866; 
+  padding: 1rem 3rem; 
+  border:none; 
+  border-radius: 5px; 
+  color: #1e2509; 
+  font-family: 'Comfortaa', cursive;
+}
+
+.btn:hover{
+  background:#6d8422;
+  color: white; 
+}
+
+.btn-dark{
+  background: #1e2509; 
+  color: white; 
+}
+.bg-dark{
+  background:#1e2509; 
+  color:white; 
+}
+
+.bg-light{
+  background: #fafafa; 
+  color: #1e2509; 
+}
+
+.bg-green{
+  background: #9FC131; 
+  color: #1e2509; 
+
+}
+.container{
+  max-width: 1100px; 
+  margin:auto; 
+  padding:0 2rem; 
+  overflow:hidden; 
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.text-center{
+  text-align: center; 
+}
+
+.list{
+  font-family: 'Comfortaa', cursive;
+  padding:0.5rem 0;
+  list-style:none; 
+  line-height: 2rem; 
+
+}
+
+.list li{
+  border-bottom:#364213 dotted 1px; 
+}
+/*navbar*/
+#navbar{
+  display:flex; /*the children will be align horizontaly by default*/
+  background: #9FC131; 
+  color:#1e2509; 
+  position:sticky; 
+  top:0; /*stick to the top*/
+  justify-content:space-between; /*space between 2 elements, to push ul elements to the side*/
+  z-index: 1; /*always on first plan*/
+  padding: 1rem; /*16px*/
+}
+
+#navbar ul{
+  display:flex; /*we want to display ul element horizontally*/
+  align-items:center; 
+  list-style: none; /*take away the underline*/
+  font-family: 'Comfortaa', cursive;
+}
+
+#navbar ul li a{
+  color:#1e2509; 
+  padding: 0.75rem; /*separate the elements*/
+  margin: 0 0.25rem; /*margin left and right*/
+}
+
+#navbar ul li a:hover{
+  background: #6d8422 ; 
+  color: white; 
+  border-radius: 5px;  
+}
+
+#showcase{
+  background:#1e2509 url('../img/drew-graham-344554-unsplash.jpg') 
+  no-repeat center center/cover; 
+  height: 100vh;
+ 
+}
+
+#showcase .showcase-content{
+  display:flex; 
+  flex-direction: column; /*we want vertical*/
+  text-align: center; 
+  justify-content:center;
+  align-items: center; 
+  height:100%; /*100% of its container*/
+  padding:0 2rem; /*just left and right*/
+  /*position:absolute; /*overlay*/
+  top: 65px; 
+  left:0; 
+  right:0; 
+  bottom:0; 
+  background-color: rgba(0,0,0,0.5); 
+}
+
+/*section:what we do*/
+.items{
+  display:flex; /*horizontal*/
+}
+
+.item{
+  flex:1; /*same distance*/
+  text-align: center; 
+  padding: 1rem; 
+  line-height: 1.7; 
+  padding-top:3.5rem; 
+  
+}
+
+
+
+#what .items .item i{
+  background: #9FC131; 
+  padding:1rem; 
+  border-radius:50%; 
+  margin-bottom: 2rem; 
+  
+}
+
+
+
+#about{
+  font-family: 'Comfortaa', cursive;
+  display:flex; 
+  line-height: 1.6rem; 
+
+}
+
+#about div{
+  flex:1; 
+}
+
+#about h3{
+  padding-top:3rem; 
+}
+
+#about .about-img{
+  background: url(../img/rawpixel-652630-unsplash.jpg) no-repeat
+  center center/cover; 
+}
+
+/*clients*/
+#client .items{
+  display:flex; 
+  justify-content: space-around;
+}
+
+#client .items img{
+  display:block; 
+  margin:auto; 
+  height: 8vw;
+  filter: grayscale(1);
+}
+
+/*contact form*/
+#contact{
+  display:flex; 
+}
+
+form{
+  margin:1rem; 
+}
+#contact .map,
+#contact .contact-form{
+  flex: 1; 
+  font-family: 'Comfortaa', cursive;
+}
+
+
+
+#contact .contact-form label{
+  display:block; /*text on top*/
+  padding:0.7rem 0 0.4rem; 
+}
+
+#contact .m-heading{
+  color: white; 
+}
+
+#contact .contact-form input, 
+#contact .contact-form textarea{
+  width: 100%; 
+  padding: 0.5rem;
+  height: 30px; 
+  border:none; 
+  border-radius:5px; 
+
+  
+}
+
+
+#contact .contact-form textarea{
+  height: 60px;
+}
+#contact .contact-form #submit{
+   margin-top:20px; 
+   padding:20px; 
+   height: auto; 
+  
+ }
+
+ #contact .contact-form #submit:hover{
+    background: #414e17;
+  
+    cursor: pointer;
+ }
+
+
+ #main-footer p{
+   font-family: 'Courier New', Courier, monospace; 
+   font-size: 12px; 
+   margin:none; 
+ }
+
+
+#navbar.small{
+    padding: 0.65rem 1rem; 
+ }
+
+ /*navbar transition*/
+ #navbar{
+   transition: padding 400ms ease-in-out; 
+ }
